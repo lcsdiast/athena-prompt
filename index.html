@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TSS Support — Prompt</title>
+  <title>Mega Prompt TSS - ATHENA SUP</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/icon.png">
 </head>
 <body>
 
@@ -12,11 +13,14 @@
        HEADER
   ════════════════════════════════════ -->
   <header>
-    <div class="logo">HEROS H2 <span>/ TSS Support</span></div>
+    <div class="logo">HEROS H2 <span>/ TSS Suporte</span></div>
     <nav>
       <a href="#pilares">Pilares</a>
       <a href="#feedback">Feedbacks</a>
-      <a href="https://docs.google.com/document/d/1nTiK9eHsALhaRZoCdBhHwFlq_bjq-OkzT5RSce1j7lc/edit?usp=sharing" class="btn nav-login">Acessar →</a>
+      <a href="#nps">Resultados</a>
+      <a href="#gems" style="color: var(--cyan); font-weight: 500;">GEM ✦</a>
+      <a href="#equipe">Equipe</a>
+      <a href="https://docs.google.com/document/d/1svJcCVxvOaq3QORQQj2xvh4t9I_Ji7cra-9a2TM7CKg/edit?usp=sharing" class="btn nav-login">Acessar →</a>
     </nav>
   </header>
 
@@ -31,7 +35,7 @@
 
     <h1>
       Jornada no Suporte TSS:
-      <em>O Segredo da Inteligência Humana + Artificial</em>
+      <em>A integração da Inteligência Humana + Artificial</em>
     </h1>
 
     <p class="hero-sub">
@@ -104,7 +108,7 @@
           <div class="pilar-icon">🔒</div>
           <div class="pilar-num">PILAR · 01</div>
         </div>
-        <div class="pilar-title">Trava Anti-Alucinação</div>
+        <div class="pilar-title">Trava Anti-Alucinação | Grounding (ancoragem)</div>
         <p class="pilar-desc">
           Modelos tentam adivinhar a resposta. Para evitar invenções no Protheus,
           aplicamos ancoragem estrita para validar informações antes de gerar texto.
@@ -117,6 +121,11 @@
         </code>
         </div>
         <div class="result-tag">A IA atua exclusivamente como intérprete da documentação oficial.</div>
+      <button class="evidence-btn" data-modal="modal-p1">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          Ver Evidências Científicas
+        </button>
+      
       </div>
 
       <!-- PILAR 2 -->
@@ -125,7 +134,7 @@
           <div class="pilar-icon">🧠</div>
           <div class="pilar-num">PILAR · 02</div>
         </div>
-        <div class="pilar-title">Raciocínio Passo a Passo</div>
+        <div class="pilar-title">Raciocínio Passo a Passo | Chain-of-Thought (CoT)</div>
         <p class="pilar-desc">
           Ensinamos a IA a pensar em etapas — Triagem → Exceção → Transferência —
           reduzindo erros e transferências indevidas. (A SOLUÇÃO PARA TRANSFERÊNCIAS EXCESSIVAS)
@@ -139,6 +148,10 @@
 </code>
         </div>
         <div class="result-tag">Retenção inteligente de tickets. A IA analisa o escopo antes de devolver o problema.</div>
+      <button class="evidence-btn" data-modal="modal-p2">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          Ver Evidências Científicas
+        </button>
       </div>
 
       <!-- PILAR 3 -->
@@ -147,7 +160,7 @@
           <div class="pilar-icon">🔍</div>
           <div class="pilar-num">PILAR · 03</div>
         </div>
-        <div class="pilar-title">Eliminação de Suposições</div>
+        <div class="pilar-title">Eliminação de Suposições | Few-shot conditioning</div>
         <p class="pilar-desc">
           Adicionamos 'Gatilhos de Evidências' para que a IA assuma postura
           investigativa quando faltam informações do cliente.
@@ -161,6 +174,11 @@ Se o relato do cliente for genérico e não houver informações suficientes par
 </code>
         </div>
         <div class="result-tag">Padronização do atendimento e artefatos técnicos corretos no primeiro contato.</div>
+      
+      <button class="evidence-btn" data-modal="modal-p3">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          Ver Evidências Científicas
+        </button>
       </div>
 
       <!-- PILAR 4 -->
@@ -169,18 +187,23 @@ Se o relato do cliente for genérico e não houver informações suficientes par
           <div class="pilar-icon">🧹</div>
           <div class="pilar-num">PILAR · 04</div>
         </div>
-        <div class="pilar-title">Isolamento de Contexto e Prevenção de 'Vazamento' de Memória</div>
+        <div class="pilar-title">Isolamento de Contexto e Prevenção de 'Vazamento' de Memória | Context Window Management</div>
         <p class="pilar-desc">
           Criamos um comando de 'reset' cirúrgico para evitar que a IA misture
           dados de clientes diferentes ao usar a mesma janela.
         </p>
         <div class="code-block">
           <code>**ISOLAMENTO DE CONTEXTO (A SENHA DE RESET):**
-**Continuidade:** Trate as minhas mensagens como continuação da análise do ticket atual (...)
+**Continuidade:** Trate as minhas mensagens como continuação da análise do ticket atual , mantendo o contexto para que eu possa tirar dúvidas ou enviar novas evidências (...)
 
-**Isolamento Total:** SOMENTE quando eu iniciar a mensagem com a palavra-chave `[NOVO TICKET]`. (...)</code>
+**Isolamento Total:** SOMENTE quando eu iniciar a mensagem com a palavra-chave `[NOVO TICKET]` , você DEVE apagar da sua memória **apenas os dados, prints, evidências e relatos do cliente anterior**. (...)</code>
         </div>
-        <div class="result-tag">A IA 'limpa a mesa' mantendo as diretrizes de suporte intactas.</div>
+        <div class="result-tag">A IA mantém as diretrizes de suporte intactas.</div>
+      <button class="evidence-btn" data-modal="modal-p4">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          Ver Evidências Científicas
+        </button>
+      
       </div>
 
     </div>
@@ -193,7 +216,7 @@ Se o relato do cliente for genérico e não houver informações suficientes par
   <section id="feedback">
 
     <div class="section-label">Feedbacks</div>
-    <h2 class="section-title">O que nossa equipe e os clientes estão dizendo?</h2>
+    <h2 class="section-title">O que os clientes estão dizendo?</h2>
     <p class="section-sub">
       Depoimentos reais.
     </p>
@@ -202,59 +225,54 @@ Se o relato do cliente for genérico e não houver informações suficientes par
 
       <div class="feedback-card reveal">
         <p class="feedback-text">
-          "A IA está muito mais assertiva agora! Antes ela inventava links que não existiam.
-          Com o Pilar 1, ela só entrega fontes reais. Isso mudou meu atendimento completamente."
+          "O analista foi claro, objetivo e respondeu de forma <br>
+          eficaz minha dúvida!"
         </p>
         <div class="feedback-author">
-          <div class="author-avatar">AN</div>
+          <div class="author-avatar">AL</div>
           <div>
-            <div class="author-name">[Nome do Analista]</div>
-            <div class="author-role">Analista de Suporte TSS</div>
+            <div class="author-name">Alex Pereira</div>
+            <div class="author-role">Ticket: 27261983</div>
           </div>
         </div>
       </div>
 
       <div class="feedback-card reveal">
         <p class="feedback-text">
-          "O [NOVO TICKET] foi um divisor de águas. Eu ficava com medo de misturar dados
-          de um cliente com outro. Agora tenho total controle do contexto sem precisar
-          fechar a janela."
+          "Consegui, obrigada pela ajuda e pode encerrar o chamado, você me ajudou demais!"
         </p>
         <div class="feedback-author">
-          <div class="author-avatar">MB</div>
+          <div class="author-avatar">TG</div>
           <div>
-            <div class="author-name">[Nome do Analista]</div>
-            <div class="author-role">Analista Sênior SPED</div>
+            <div class="author-name">Tiago Stocco</div>
+            <div class="author-role">Ticket: 27631449</div>
           </div>
         </div>
       </div>
 
       <div class="feedback-card reveal">
         <p class="feedback-text">
-          "O Gatilho de Evidências padronizou o primeiro contato. A IA já me lembra de
-          pedir o XML e o Console.log. Não perco mais tempo em ciclos de
-          pergunta-resposta desnecessários."
+          "Nossa Dani, seu atendimento foi excelente, é muito bom quando encontramos analistas como você, esclarecedores. obrigada!"
         </p>
         <div class="feedback-author">
-          <div class="author-avatar">RC</div>
+          <div class="author-avatar">VR</div>
           <div>
-            <div class="author-name">[Nome do Analista]</div>
-            <div class="author-role">Especialista de Suporte</div>
+            <div class="author-name">Vera Rocha</div>
+            <div class="author-role">Ticket: 27327321</div>
           </div>
         </div>
       </div>
 
       <div class="feedback-card reveal">
         <p class="feedback-text">
-          "O Chain of Thought foi o que mais me surpreendeu. A IA agora pensa antes de
-          transferir. Isso reduziu significativamente os tickets devolvidos por
-          triagem incorreta."
+           "Parabéns. Você me mandou o material corretíssimo. Deu certo! Obrigado!"
+
         </p>
         <div class="feedback-author">
-          <div class="author-avatar">JP</div>
+          <div class="author-avatar">RA</div>
           <div>
-            <div class="author-name">[Nome do Analista]</div>
-            <div class="author-role">Coordenador de Suporte</div>
+            <div class="author-name">Ricardo Amaral</div>
+            <div class="author-role">Ticket: 27002479</div>
           </div>
         </div>
       </div>
@@ -262,14 +280,526 @@ Se o relato do cliente for genérico e não houver informações suficientes par
     </div>
   </section>
 
+  <!-- ═══════════════════════════════════
+       SEÇÃO: SINERGIA ATHENA
+  ════════════════════════════════════ -->
+  <section id="athena" class="athena-section">
+    <div class="athena-inner reveal">
+ 
+      <div class="athena-quote-mark">"</div>
+ 
+      <div class="athena-body">
+        <p class="athena-quote-text">
+          Vitor Vargem Julio Barbosa, criador da <strong>Athena</strong>, validou a assertividade do prompt e recomendou a criação de um GEM exclusivo para o TSS.
+        </p>
+        <div class="athena-author">
+          <div class="athena-avatar">
+            <img id="img-vitor" src="img/vitor.webp" alt="" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+          </div>
+          <div>
+            <div class="athena-name">Vitor Vargem Julio Barbosa</div>
+            <div class="athena-role">Criador da Athena</div>
+          </div>
+          <div class="athena-badge">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Validado
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+ 
+  <!-- ═══════════════════════════════════
+       SEÇÃO: NPS + PRODUTIVIDADE
+  ════════════════════════════════════ -->
+  <section id="nps">
+ 
+    <div class="section-label">Impacto Real</div>
+    <h2 class="section-title">Ganhos de Produtividade</h2>
+    <p class="section-sub">Resultados mensuráveis desde a adoção da metodologia em campo.</p>
+ 
+    <div class="nps-grid">
+ 
+      <!-- NPS Card -->
+      <div class="nps-main-card reveal">
+        <div class="nps-label">Qualidade Percebida — NPS</div>
+        <div class="nps-score-row">
+          <div class="nps-score">10</div>
+          <div class="nps-slash">/10</div>
+        </div>
+        <div class="nps-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
+        </div>
+        <p class="nps-desc">Notas máximas e elogios diretos de clientes sobre o <strong>profissionalismo dos analistas</strong> após a adoção da IA.</p>
+ 
+        <!-- <blockquote class="nps-blockquote">
+          <p>"Muito top, isso ajuda e muito no dia a dia. Uso às vezes para poder me aprofundar."</p>
+          <cite>— Analista de Suporte TSS</cite>
+        </blockquote> -->
+      </div>
+ 
+      <!-- Métricas laterais -->
+      <div class="nps-side-cards">
+ 
+        <div class="nps-side reveal">
+          <div class="nps-side-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div>
+            <div class="nps-side-title">Agilidade Operacional</div>
+            <div class="nps-side-desc">Reset cirúrgico de atendimentos via isolamento de contexto, sem perda das diretrizes de suporte.</div>
+          </div>
+        </div>
+ 
+        <div class="nps-side reveal">
+          <div class="nps-side-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <div>
+            <div class="nps-side-title">Retenção de Conhecimento</div>
+            <div class="nps-side-desc">Analistas com acesso contínuo a um consultor técnico em tempo real, reduzindo a carga cognitiva.</div>
+          </div>
+        </div>
+ 
+        <div class="nps-side reveal">
+          <div class="nps-side-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="nps-side-title">Primeiro Contato Resolutivo</div>
+            <div class="nps-side-desc">Gatilho de evidências padronizou a coleta de artefatos técnicos já na abertura do ticket.</div>
+          </div>
+        </div>
+ 
+      </div>
+ 
+    </div>
+  </section>
+ 
+ 
+  <!-- ═══════════════════════════════════
+       SEÇÃO: ESCALABILIDADE
+  ════════════════════════════════════ -->
+  <section id="escala">
+ 
+    <div class="escala-quote reveal">
+      <div class="escala-quote-line"></div>
+      <p>
+        Esta metodologia é um <strong>modelo replicável</strong> para qualquer célula de suporte — Fiscal, RH, Logística — bastando ajustar a base de ancoragem. O Mega-Prompt atua como um <strong>consultor técnico em tempo real</strong>: valida configurações, detecta RPOs desatualizados e orienta sobre exigências fiscais.
+      </p>
+      <div class="escala-quote-line"></div>
+    </div>
+ 
+    <div class="escala-tags reveal">
+      <span class="escala-tag">✦ Validação de Configurações</span>
+      <span class="escala-tag">✦ Identificação de Conflitos</span>
+      <span class="escala-tag">✦ Boas Práticas Fiscais</span>
+      
+    </div>
+ 
+  </section>
+
+
+   <!-- ═══════════════════════════════════
+       SEÇÃO: GEMs
+  ════════════════════════════════════ -->
+  <section id="gems" class="gems-section">
+ 
+    <div class="gems-glow"></div>
+ 
+    <div class="gems-inner">
+ 
+      <div class="gems-header reveal">
+        <div class="section-label">Ferramentas da Equipe</div>
+        <h2 class="section-title">GEM Disponível</h2>
+        <p class="section-sub">
+          Acesse diretamente o agente de IA criado e otimizado pelo time TSS.
+        </p>
+      </div>
+ 
+      <div class="gems-grid">
+ 
+        <!-- GEM 1 — substitua href e textos -->
+        <a class="gem-card reveal" href="https://gemini.google.com/gem/17BA-bAdv4fISIjk28finz15Dq7Bc7DDv?usp=sharing" target="_blank" rel="noopener">
+          <div class="gem-glow-inner"></div>
+          <div class="gem-card-top">
+            <div class="gem-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="gem-badge">Hero Sup</div>
+          </div>
+          <div class="gem-name">Hero Sup. 1.0.4</div>
+          <p class="gem-desc">Especialista em TOTVS Protheus com foco em SPED, TSS, SIGAFAT, SIGAFIS, documentos eletrônicos, XML, rejeições, Cloud TSS e Reforma Tributária IBS/CBS. Funciona com múltiplos tickets no mesmo chat: para iniciar um novo caso, comece com “Ticket:” ou “Novo Ticket:”; para continuar o caso atual, use “Continuação Ticket:”, “Ticket atual:” ou informe claramente que é continuação do ticket anterior. Com documentos base.</p>
+          <div class="gem-cta">
+            Acessar GEM
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </a>
+ 
+      </div><!-- /gems-grid -->
+
+        <!-- Crédito do criador dos GEMs -->
+      <div class="gem-creator-card reveal">
+        <div class="gem-creator-photo-wrap">
+          <label class="gem-creator-photo-label" for="creator-photo-upload" title="Adicionar foto">
+            <img id="img-vitor" src="img/Paulo.webp" alt="Foto do criador" style="width:100%; height:100%; object-fit:cover; ">
+          </label>
+        </div>
+        <div class="gem-creator-info">
+          <div class="gem-creator-badge">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            Arquiteto dos GEMs
+          </div>
+          <div class="gem-creator-name">Paulo H. Jesus</div>
+          <a href="mailto:pauloh.jesus@totvs.com.br" class="gem-creator-email">pauloh.jesus@totvs.com.br</a>
+          <p class="gem-creator-desc">Responsável pela concepção, arquitetura e implementação dos GEMs do time TSS.</p>
+        </div>
+      </div>
+ 
+      <!-- Banner de destaque -->
+      <!-- <div class="gems-banner reveal">
+        <div class="gems-banner-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div class="gems-banner-text">
+          <strong>Tem um GEM novo para compartilhar?</strong>
+          Envie o link para Paulo e ele será adicionado nesta página.
+        </div>
+        <a href="mailto:pauloh.jesus@totvs.com.br" class="btn btn-primary gems-banner-btn">Enviar GEM →</a>
+      </div> -->
+ 
+    </div><!-- /gems-inner -->
+ 
+  </section>
+ 
+ 
+  <!-- ═══════════════════════════════════
+       SEÇÃO: EQUIPE HEROES
+  ════════════════════════════════════ -->
+  <section id="equipe" class="equipe-section">
+ 
+    <div class="equipe-inner">
+ 
+      <div class="equipe-header reveal">
+        <div class="section-label">Prontos para solucionar desafios</div>
+        <h2 class="section-title">Heroes Suporte TSS</h2>
+        <p class="section-sub">A equipe que transforma tecnologia em atendimento de excelência todos os dias.</p>
+      </div>
+ 
+      <div class="equipe-grid">
+ 
+        <!-- Membro 1 -->
+        <div class="membro-card reveal">
+          <label class="membro-photo-wrap" for="foto-paulo" title="Adicionar foto">
+            <img id="img-paulo" src="img/Paulo.webp" alt="Foto do criador" style="width:100%; height:100%; object-fit:cover; ">
+          </label>
+          <div class="membro-info">
+            <div class="membro-initials">PH</div>
+            <div class="membro-name">Paulo H. Jesus</div>
+            <a href="mailto:pauloh.jesus@totvs.com.br" class="membro-email">pauloh.jesus@totvs.com.br</a>
+          </div>
+        </div>
+ 
+        <!-- Membro 3 -->
+        <div class="membro-card reveal">
+          <label class="membro-photo-wrap" for="foto-roberth" title="Adicionar foto">
+            <img id="img-roberth" src="img/Roberth.webp" alt="" style=" width:100%; height:100%; object-fit:cover; ">
+          </label>
+          <div class="membro-info">
+            <div class="membro-initials">RF</div>
+            <div class="membro-name">Roberth Feijó</div>
+            <a href="mailto:roberth.souza@totvs.com.br" class="membro-email">roberth.souza@totvs.com.br</a>
+          </div>
+        </div>
+ 
+        <!-- Membro 4 -->
+        <div class="membro-card reveal">
+          <label class="membro-photo-wrap" for="foto-jhennifer" title="Adicionar foto">
+            <img id="img-jhennifer" src="img/Jhennifer.webp" alt="" style=" width:100%; height:100%; object-fit:cover; ">
+          </label>
+          <div class="membro-info">
+            <div class="membro-initials">JS</div>
+            <div class="membro-name">Jhennifer Silva</div>
+            <a href="mailto:jhennifer.silva@totvs.com.br" class="membro-email">jhennifer.silva@totvs.com.br</a>
+          </div>
+        </div>
+ 
+        <!-- Membro 5 -->
+        <div class="membro-card reveal">
+          <label class="membro-photo-wrap" for="foto-maiyara" title="Adicionar foto">
+            <img id="img-maiyara" src="img/Maiyara.webp" alt="" style=" width:100%; height:100%; object-fit:cover; ">
+          </label>
+          <div class="membro-info">
+            <div class="membro-initials">MC</div>
+            <div class="membro-name">Maiyara Cassia</div>
+            <a href="mailto:maiyara.cassia@totvs.com.br" class="membro-email">maiyara.cassia@totvs.com.br</a>
+          </div>
+        </div>
+ 
+        <!-- Membro 6 -->
+        <div class="membro-card reveal">
+          <label class="membro-photo-wrap" for="foto-alcilene" title="Adicionar foto">
+            <img id="img-alcilene" src="img/alcilene.webp" alt="" style=" width:100%; height:100%; object-fit:cover; ">
+          </label>
+          <div class="membro-info">
+            <div class="membro-initials">AS</div>
+            <div class="membro-name">Alcilene Silva</div>
+            <a href="mailto:alcilene.silva@totvs.com.br" class="membro-email">alcilene.silva@totvs.com.br</a>
+          </div>
+        </div>
+
+        <!-- Membro 2 -->
+        <div class="membro-card reveal">
+          <label class="membro-photo-wrap" for="foto-lucas" title="Adicionar foto">
+            <img id="img-lucas" src="img/Lucas.jpeg" alt="" style="width:100%; height:100%; object-fit:cover; ">
+          </label>
+          <div class="membro-info">
+            <div class="membro-initials">LD</div>
+            <div class="membro-name">Lucas D. Ferreira</div>
+            <a href="mailto:lucas.dferreira@totvs.com.br" class="membro-email">lucas.dferreira@totvs.com.br</a>
+          </div>
+        </div>
+ 
+        <!-- Membro 7 -->
+        <div class="membro-card reveal">
+          <label class="membro-photo-wrap" for="foto-jessica" title="Adicionar foto">
+            <img id="img-jessica" src="img/Jessica.webp" alt="" style=" width:100%; height:100%; object-fit:cover;">
+          </label>
+         
+          <div class="membro-info">
+            <div class="membro-initials">JD</div>
+            <div class="membro-name">Jessica da Silva</div>
+            <a href="mailto:jessica.dasilva@totvs.com.br" class="membro-email">jessica.dasilva@totvs.com.br</a>
+          </div>
+        </div>
+ 
+        <!-- Membro 8 -->
+        <div class="membro-card reveal">
+          <label class="membro-photo-wrap" for="foto-caique" title="Adicionar foto">
+            <img id="img-caique" src="img/Caique.webp" alt="" style=" width:100%; height:100%; object-fit:cover; ">
+          </label>
+          <div class="membro-info">
+            <div class="membro-initials">CN</div>
+            <div class="membro-name">Caique Nunes</div>
+            <a href="mailto:caique.nunes@totvs.com.br" class="membro-email">caique.nunes@totvs.com.br</a>
+          </div>
+        </div>
+ 
+        <!-- Membro 9 -->
+        <div class="membro-card reveal">
+          <label class="membro-photo-wrap" for="foto-kevin" title="Adicionar foto">
+            <img id="img-kevin" src="img/unnamed.webp" alt="" style=" width:100%; height:100%; object-fit:cover; ">
+            
+          </label>
+          
+          <div class="membro-info">
+            <div class="membro-initials">KS</div>
+            <div class="membro-name">Kevin Saldanha</div>
+            <a href="mailto:kevin.saldanha@totvs.com.br" class="membro-email">kevin.saldanha@totvs.com.br</a>
+          </div>
+        </div>
+
+        <!-- Membro 10 -->
+        <div class="membro-card reveal">
+          <label class="membro-photo-wrap" for="foto-daniela" title="Adicionar foto">
+            <img id="img-Daniela" src="/img/Daniela.webp" alt="" style=" width:100%; height:100%; object-fit:cover; ">
+          </label>
+          <div class="membro-info">
+            <div class="membro-initials">KS</div>
+            <div class="membro-name">Daniela Sofia</div>
+            <a href="mailto:daniela.assis@totvs.com.br" class="membro-email">daniela.assis@totvs.com.br</a>
+          </div>
+        </div>
+ 
+      </div><!-- /equipe-grid -->
+ 
+    </div><!-- /equipe-inner -->
+ 
+  </section>
 
   <!-- ═══════════════════════════════════
        FOOTER
   ════════════════════════════════════ -->
   <footer>
-    <div class="logo">HEROS H2 <span>/ TSS Support</span></div>
+    <div class="logo">HEROS H2 <span>/ TSS Suporte</span></div>
     <p>Documento interno · Uso da equipe de suporte SPED/TSS · © 2026</p>
   </footer>
+
+
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+ 
+    <!-- MODAL PILAR 1 -->
+    <div class="modal" id="modal-p1" data-accent="cyan">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <span class="modal-pilar-num">PILAR · 01</span>
+          <h3 class="modal-title">Ancoragem de Contexto <span>(Grounding)</span></h3>
+        </div>
+        <button class="modal-close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">
+          Grounding (ancoragem) é a técnica de forçar o modelo a basear suas respostas
+          exclusivamente em fontes verificáveis fornecidas no prompt, eliminando o fenômeno
+          de <em>hallucination</em> — quando a IA "inventa" fatos com alto grau de confiança.
+          Os estudos abaixo demonstram a eficácia desta abordagem em sistemas de suporte técnico.
+        </p>
+        <div class="modal-articles">
+          <a class="article-card" href="https://arxiv.org/abs/2302.12813" target="_blank" rel="noopener">
+            <div class="article-meta">arXiv · 2023</div>
+            <div class="article-title">A Survey on Hallucination in Large Language Models</div>
+            <div class="article-desc">Levantamento abrangente sobre causas, tipos e métodos de mitigação de alucinações em LLMs.</div>
+            <div class="article-link">Acessar artigo →</div>
+          </a>
+          <a class="article-card" href="https://arxiv.org/abs/2305.14627" target="_blank" rel="noopener">
+            <div class="article-meta">arXiv · 2023</div>
+            <div class="article-title">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</div>
+            <div class="article-desc">Demonstra como ancorar modelos em bases documentais externas reduz drasticamente respostas inventadas.</div>
+            <div class="article-link">Acessar artigo →</div>
+          </a>
+          <a class="article-card" href="https://arxiv.org/abs/2307.03987" target="_blank" rel="noopener">
+            <div class="article-meta">arXiv · 2023</div>
+            <div class="article-title">Factuality Challenges in the Era of Large Language Models</div>
+            <div class="article-desc">Analisa como instruções de grounding no prompt aumentam a fidelidade factual das respostas geradas.</div>
+            <div class="article-link">Acessar artigo →</div>
+          </a>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- MODAL PILAR 2 -->
+    <div class="modal" id="modal-p2" data-accent="red">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <span class="modal-pilar-num">PILAR · 02</span>
+          <h3 class="modal-title">Raciocínio Passo a Passo <span>(Chain of Thought)</span></h3>
+        </div>
+        <button class="modal-close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">
+          Chain-of-Thought (CoT) é uma técnica que instrui o modelo a decompor problemas
+          complexos em etapas intermediárias antes de emitir uma resposta final. Isso reduz
+          erros de raciocínio e melhora a precisão em tarefas que exigem múltiplas decisões
+          sequenciais — como triagem de suporte técnico.
+        </p>
+        <div class="modal-articles">
+          <a class="article-card" href="https://arxiv.org/abs/2201.11903" target="_blank" rel="noopener">
+            <div class="article-meta">arXiv · Wei et al. · 2022</div>
+            <div class="article-title">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</div>
+            <div class="article-desc">Paper original do Google Brain que introduz o CoT, demonstrando ganhos expressivos em tarefas de raciocínio lógico.</div>
+            <div class="article-link">Acessar artigo →</div>
+          </a>
+          <a class="article-card" href="https://arxiv.org/abs/2205.01068" target="_blank" rel="noopener">
+            <div class="article-meta">arXiv · 2022</div>
+            <div class="article-title">Large Language Models are Zero-Shot Reasoners</div>
+            <div class="article-desc">Mostra que instruir o modelo a "pensar passo a passo" melhora significativamente a acurácia sem exemplos adicionais.</div>
+            <div class="article-link">Acessar artigo →</div>
+          </a>
+          <a class="article-card" href="https://arxiv.org/abs/2210.11610" target="_blank" rel="noopener">
+            <div class="article-meta">arXiv · 2022</div>
+            <div class="article-title">ReAct: Synergizing Reasoning and Acting in Language Models</div>
+            <div class="article-desc">Extensão do CoT que combina raciocínio e ações sequenciais, base para agentes de suporte autônomos.</div>
+            <div class="article-link">Acessar artigo →</div>
+          </a>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- MODAL PILAR 3 -->
+    <div class="modal" id="modal-p3" data-accent="gold">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <span class="modal-pilar-num">PILAR · 03</span>
+          <h3 class="modal-title">Eliminação de Suposições <span>(Few-Shot Conditioning)</span></h3>
+        </div>
+        <button class="modal-close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">
+          Few-shot conditioning insere exemplos comportamentais no prompt para conduzir o modelo
+          a adotar uma postura investigativa frente a informações incompletas. Os "Gatilhos de
+          Evidências" são uma aplicação direta deste princípio: ao invés de assumir, a IA
+          solicita os artefatos necessários antes de agir.
+        </p>
+        <div class="modal-articles">
+          <a class="article-card" href="https://arxiv.org/abs/2005.14165" target="_blank" rel="noopener">
+            <div class="article-meta">arXiv · Brown et al. · 2020</div>
+            <div class="article-title">Language Models are Few-Shot Learners</div>
+            <div class="article-desc">Paper seminal que demonstra como poucos exemplos no contexto condicionam profundamente o comportamento do modelo.</div>
+            <div class="article-link">Acessar artigo →</div>
+          </a>
+          <a class="article-card" href="https://arxiv.org/abs/2107.13586" target="_blank" rel="noopener">
+            <div class="article-meta">arXiv · 2021</div>
+            <div class="article-title">Fantastically Ordered Prompts and Where to Find Them</div>
+            <div class="article-desc">Investiga como a ordem e estrutura de exemplos no prompt impactam a qualidade e consistência das respostas.</div>
+            <div class="article-link">Acessar artigo →</div>
+          </a>
+          <a class="article-card" href="https://arxiv.org/abs/2203.11171" target="_blank" rel="noopener">
+            <div class="article-meta">arXiv · 2022</div>
+            <div class="article-title">Self-Consistency Improves Chain of Thought Reasoning</div>
+            <div class="article-desc">Demonstra que exemplos condicionantes consistentes reduzem variância e aumentam a precisão das respostas técnicas.</div>
+            <div class="article-link">Acessar artigo →</div>
+          </a>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- MODAL PILAR 4 -->
+    <div class="modal" id="modal-p4" data-accent="violet">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <span class="modal-pilar-num">PILAR · 04</span>
+          <h3 class="modal-title">Isolamento de Contexto <span>(Context Window Management)</span></h3>
+        </div>
+        <button class="modal-close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">
+          LLMs não possuem memória entre sessões, mas dentro de uma mesma janela de contexto
+          acumulam dados de interações anteriores. O fenômeno de "context bleed" ocorre quando
+          informações de um ticket contaminam a análise do seguinte. O comando <code>[NOVO TICKET]</code>
+          é uma solução de isolamento seletivo baseada em pesquisas de gerenciamento de contexto.
+        </p>
+        <div class="modal-articles">
+          <a class="article-card" href="https://arxiv.org/abs/2307.03172" target="_blank" rel="noopener">
+            <div class="article-meta">arXiv · 2023</div>
+            <div class="article-title">Lost in the Middle: How Language Models Use Long Contexts</div>
+            <div class="article-desc">Demonstra que informações no meio da janela de contexto são frequentemente ignoradas, evidenciando riscos de contaminação entre turnos.</div>
+            <div class="article-link">Acessar artigo →</div>
+          </a>
+          <a class="article-card" href="https://arxiv.org/abs/2310.06825" target="_blank" rel="noopener">
+            <div class="article-meta">arXiv · 2023</div>
+            <div class="article-title">System-Level Natural Language Feedback Makes LLMs Better</div>
+            <div class="article-desc">Explora como instruções de sistema persistentes e isolamento de contexto por turno melhoram a consistência do modelo.</div>
+            <div class="article-link">Acessar artigo →</div>
+          </a>
+          <a class="article-card" href="https://arxiv.org/abs/2304.01373" target="_blank" rel="noopener">
+            <div class="article-meta">arXiv · 2023</div>
+            <div class="article-title">Unleashing Cognitive Synergy in Large Language Models</div>
+            <div class="article-desc">Aborda estratégias de separação de papéis e contextos dentro de uma mesma sessão para evitar interferência entre tarefas.</div>
+            <div class="article-link">Acessar artigo →</div>
+          </a>
+        </div>
+      </div>
+    </div>
+ 
+  </div><!-- /modal-overlay -->
 
 
   <!-- JS carregado ao final do body para garantir que o DOM está pronto -->

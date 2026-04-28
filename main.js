@@ -55,4 +55,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+   // ─── 4. Modal de Evidências Científicas ───────────────────────────────────
+ 
+  const overlay   = document.getElementById('modal-overlay');
+  const allModals = document.querySelectorAll('.modal');
+ 
+  /** Abre o modal correspondente ao ID informado */
+  function openModal(id) {
+    const modal = document.getElementById(id);
+    if (!modal) return;
+ 
+    // Garante que só um modal esteja ativo por vez
+    allModals.forEach(m => m.classList.remove('active'));
+ 
+    modal.classList.add('active');
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden'; // trava o scroll da página
+  }
+ 
+  /** Fecha todos os modais */
+  function closeModal() {
+    allModals.forEach(m => m.classList.remove('active'));
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+ 
+  // Botões "Ver Evidências Científicas" nos cards
+  document.querySelectorAll('.evidence-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      openModal(btn.dataset.modal);
+    });
+  });
+ 
+  // Botões de fechar (×) dentro dos modais
+  document.querySelectorAll('.modal-close').forEach(btn => {
+    btn.addEventListener('click', closeModal);
+  });
+ 
+  // Clique no backdrop fecha o modal
+  overlay.querySelector('.modal-backdrop').addEventListener('click', closeModal);
+ 
+  // Tecla Escape fecha o modal
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && overlay.classList.contains('open')) closeModal();
+  });
+ 
+
 });
