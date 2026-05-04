@@ -1540,6 +1540,11 @@ footer p {
  
 .membro-email:hover { color: var(--cyan); }
 
+.back-container {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
 
 /* ═══════════════════════════════════════════
    PROMPT PAGE - COPY BUTTON
