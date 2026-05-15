@@ -1112,52 +1112,7 @@ footer p {
 /* ═══════════════════════════════════════════
    SINERGIA ATHENA
 ════════════════════════════════════════════ */
-.athena-section {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 4rem 2rem 2rem;
-}
- 
-.athena-inner {
-  position: relative;
-  background: linear-gradient(135deg, rgba(0,204,255,0.05) 0%, rgba(155,127,255,0.04) 100%);
-  border: 1px solid rgba(0,204,255,0.15);
-  border-radius: 20px;
-  padding: 2.5rem 2.5rem 2.5rem 3.5rem;
-  overflow: hidden;
-}
- 
-.athena-inner::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 3px;
-  background: linear-gradient(to bottom, var(--cyan), var(--violet));
-  border-radius: 0 2px 2px 0;
-}
- 
-.athena-quote-mark {
-  position: absolute;
-  top: 0.5rem; right: 1.5rem;
-  font-family: 'Syne', sans-serif;
-  font-size: 7rem;
-  line-height: 1;
-  color: var(--cyan);
-  opacity: 0.06;
-  pointer-events: none;
-  user-select: none;
-}
- 
-.athena-quote-text {
-  font-size: 1rem;
-  color: var(--text-muted);
-  line-height: 1.85;
-  margin-bottom: 1.5rem;
-}
- 
-.athena-quote-text strong { color: var(--text); font-weight: 600; }
-.athena-quote-text em { color: var(--cyan); font-style: normal; }
- 
+
 .athena-author {
   display: flex;
   align-items: center;
@@ -1189,22 +1144,6 @@ footer p {
   font-size: 0.72rem;
   color: var(--text-muted);
   font-family: 'DM Mono', monospace;
-}
- 
-.athena-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.68rem;
-  font-family: 'DM Mono', monospace;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--green);
-  background: rgba(46,204,138,0.08);
-  border: 1px solid rgba(46,204,138,0.2);
-  padding: 0.25rem 0.65rem;
-  border-radius: 100px;
-  margin-left: auto;
 }
  
 /* ═══════════════════════════════════════════
